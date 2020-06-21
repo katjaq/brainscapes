@@ -19,6 +19,9 @@
     .my-font {
       font-family: 'Roboto', sans-serif;
     }
+    .my-image {
+      filter: grayscale(70%) brightness(80%) contrast(120%);
+    }
 
     .box-shadow:hover {
       box-shadow: 3px 3px 3px rgba(0,0,0,0.2) !important;
@@ -76,15 +79,15 @@
       <q-page-container>
         <q-page>
 
-          <!-- Image section -->
+          <!-- Image header section -->
           <div class="q-px-md bg-primary" >
-            <div class="q-px-xl q-pt-sm bg-primary" id="id_recentpapers" >
+            <div class="q-px-xl q-pt-none bg-primary" id="brainshapes_1" >
 
               <div class="row justify-left" >
                 <div class="col-md-1" ></div>
 
-                <div class="q-pt-xl q-px-xl col-12 col-lg-11 col-md-11" >
-                  <q-img class="q-px-xl" style="width:90%;" src="/img/1_brain-shapes.png" >
+                <div class="q-pt-none q-px-none col-12 col-lg-6 col-md-8" >
+                  <q-img class="q-px-xl q-py-sm my-image" style="width:100%;" src="/img/1_brain-shapes.png" >
                   </q-img>
                 </div>
 
@@ -94,10 +97,10 @@
             </div>
           </div>
 
-          <!-- Titel section -->
+          <!-- Page 1 -->
           <div class="q-px-md bg-primary" >
 
-            <div class="q-px-xl q-pt-xl bg-primary" id="id_about" >
+            <div class="q-px-xl q-pt-xl bg-primary" id="page_1" >
 
               <!-- Titel -->
               <div class="row justify-left" >
@@ -117,19 +120,19 @@
                 <div class="col-md-1"></div>
 
                 <div class="q-py-sm col-12 col-lg-6 col-md-9">
-                  <span class="text-center text-white text-h6 text-weight-light">Katja Heuer, Marian Kleineberg, Russell Dinnage, Chet C. Sherwood, William Donald, Hopkins, Ernst Schwartz, Georg Langs, Romain Valabregue, Mathieu D. Santin, Marc Herbin, & Roberto Toro
+                  <span class="text-center text-white text-h6 text-weight-light"><a href="https://twitter.com/katjaQheuer" target="_blank" class="text-center text-white text-h6 text-weight-medium" style="text-decoration: none; cursor: pointer">Katja Heuer</a>, Marian Kleineberg, Russell Dinnage, Chet C. Sherwood, William Donald, Hopkins, Ernst Schwartz, Georg Langs, Romain Valabregue, Mathieu D. Santin, Marc Herbin, & <a href="https://twitter.com/R3RT0" target="_blank" class="text-center text-white text-h6 text-weight-medium" style="text-decoration: none; cursor: pointer">Roberto Toro</a>
                   </span>
                 </div>
 
                 <div class="col-md-2"></div>
               </div>
 
-              <!-- Authors -->
-              <div class="q-pb-md row justify-left">
+              <!-- Text Section: Intro -->
+              <div class="q-pb-none row justify-left">
 
                 <div class="col-md-1"></div>
 
-                <div class="q-py-sm col-12 col-lg-6 col-md-9">
+                <div class="q-pt-xl col-12 col-lg-6 col-md-9">
                   <span class="text-center text-white text-body1 text-weight-light">‪The shape of primate brains varies widely from small smooth to profusely folded large brains. Studying morphological diversity across phylogeny allows us to better understand how primate brains adapt, and in particular the evolutionary context of the human brain.‬
                   </span>
                 </div>
@@ -137,32 +140,53 @@
                 <div class="col-md-2"></div>
               </div>
 
+              <!-- Image 1 -->
+              <div class="q-px-md bg-primary" >
+                <div class="q-px-xl q-pt-none bg-primary" id="brainshapes_1" >
+    
+                  <div class="row justify-left" >
+                    <div class="col-md-1" ></div>
+    
+                    <div class="q-pt-md q-px-none col-12 col-lg-10 col-md-9" >
+                      <q-img class="q-px-xl q-pt-md q-py-sm" style="width:100%;" src="/img/1_brain-shapes.png" >
+                      </q-img>
+                    </div>
+    
+                    <div class="col-md-1" ></div>
+    
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Intro -->
+          <!-- Page 2 -->
           <div class="q-px-md bg-primary" >
-            <div class="q-px-xl q-pt-sm bg-primary" id="id_recentpapers" >
+            <div class="q-px-xl q-pt-xl bg-primary" id="page_2" >
 
               <!-- Text section -->
               <div class="row justify-left" >
                 <div class="col-md-1" ></div>
 
-                <div class="q-pt-xl col-12 col-lg-6 col-md-9" >
-                  <h5 class="text-left text-grey-10 text-weight-bold" style="font-size: 21px !important;">BraAAAIIInnnZZZ
-                  </h5>
+                <div class="q-py-xl col-12 col-lg-6 col-md-9">
+                  <span class="text-center text-white text-body1 text-weight-light">‪Recent advances in generative machine learning models have led to algorithms capable of learning shape embeddings and to generate realistic new instances. We explored an autoencoder deep neural network to generate shapes of primate brains including 34 different species.
+                  </span>
                 </div>
 
                 <div class="col-md-1" ></div>
               </div>
 
-              <!-- Image section -->
+              <!-- Video section -->
               <div class="row justify-left" >
                 <div class="col-md-1" ></div>
 
-                <div class="q-pt-xl q-px-xl col-12 col-lg-11 col-md-11" >
-                  <q-img class="q-px-xl" style="width:90%;" src="/img/1_brain-shapes.png" >
-                  </q-img>
+                <div class="q-pb-lg q-px-none col-12 col-lg-10 col-md-9" >
+                  <!-- <q-video class="q-pa-none" style="width:90%;height:620px;" src="/img/2_animated_tsne_01.mp4" autoplay loop muted>
+                  </q-video> -->
+                  <video width="100%" poster="/img/2_animated_tsne_01.jpg" autoplay loop muted>
+                    <source type="video/mp4" src="/img/2_animated_tsne_01.mp4">
+                  </video>
                 </div>
 
                 <div class="col-md-1" ></div>
