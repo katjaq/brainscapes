@@ -59,7 +59,7 @@
     brand: {
       primary: '#FFFFFF',
       secondary: '#26A69A',
-      accent: '#668fa6',
+      accent: '#C10015',
 
       dark: 'rgb(66,67,68)',
 
@@ -126,6 +126,23 @@
                 </div>
 
                 <div class="col-md-2"></div>
+              </div>
+
+              <!-- Links to poster pdf and jitsi chat -->
+              <div class="row justify-left">
+
+                <div class="col-md-1"></div>
+
+                <div class="col-12 col-lg-6 col-md-9 text-left">
+                  <q-btn flat dense no-caps class="text-weight-regular q-mr-lg q-px-md q-py-none" type="a" target="_blank" href="https://meet.jit.si/DeepPrimateBrainShapes" size="lg"
+                    :style="'background:'+ theme_color +'; color: white; font-size: 21px;'" label="Come to our video chat" >
+                  </q-btn>
+                  <q-btn flat dense no-caps class="text-weight-regular q-px-md q-py-none" type="a" target="_blank" href="https://github.com/katjaq/brainscapes/blob/master/img/Heuer-Toro_BrainScapes_OHBM_2020.pdf" size="lg"
+                    :style="'background:'+ theme_color +'; color: white'" label="Our poster for more details" >
+                  </q-btn>
+                </div>
+
+                <div class="col-12 col-md-2"></div>
               </div>
 
               <!-- Text Section 1: Intro -->
@@ -297,8 +314,8 @@
           bg_color: '#4b4f51',
           hover: false,
           active: false,
-          theme_color: '#668fa6',
-          background_style: '#668fa6',
+          theme_color: '#917e81',
+          background_style: '#917e81',
           paper_heading_1: [],
           paper_heading_color_1: '#4b4f51',
           headerState: false,
